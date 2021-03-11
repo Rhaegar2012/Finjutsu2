@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="income_tag">Total Income</string>
+    <string name="expense_tag">Total Expense</string>
+    <string name="balance_tag">Balance</string>
+    <string name="button_text">+</string>
+    <string name="save_button">Save</string>
+
+</resources>

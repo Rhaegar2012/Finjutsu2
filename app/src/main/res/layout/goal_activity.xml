@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".GoalActivity" >
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="+"
+        android:onClick="onClickAddGoal"/>
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/add_button"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/back_to_dojo"
+        android:onClick="onClickBack"/>
+    <ListView
+        android:id="@+id/goal_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+
+</RelativeLayout>

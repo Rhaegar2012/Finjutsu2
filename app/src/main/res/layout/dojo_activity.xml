@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DojoActivity">
+
+    <Button
+        android:id="@+id/ninja_budget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="400dp"
+        android:text="@string/budget_button"
+        android:onClick="onClickBudget"
+
+        />
+
+    <Button
+        android:id="@+id/my_ninja_goals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ninja_budget"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="400dp"
+        android:onClick="onClickGoals"
+        android:text="@string/ninja_goals" />
+
+    <Button
+        android:id="@+id/monthly_planner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/my_ninja_goals"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="400dp"
+        android:onClick="onClickCalendar"
+        android:text="@string/monthly_planner" />
+
+    <TextView
+        android:id="@+id/user_name_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_ninja_goals"
+        android:layout_marginTop="60dp"
+        android:layout_toLeftOf="@+id/my_ninja_goals"
+        android:text="USER NAME" />
+
+    <TextView
+        android:id="@+id/balance_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/user_name_display"
+        android:layout_below="@+id/ninja_budget"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="60dp"
+        android:text="BALANCE" />
+
+    <ProgressBar
+        android:id="@+id/background_progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/stats_full"/>
+
+
+    <ProgressBar
+        android:id="@+id/stats_progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        android:layout_centerHorizontal="true"
+        android:progressDrawable="@drawable/stats_progress" />
+    <TextView
+        android:id="@+id/expenseProportion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stats_progressbar"
+        android:layout_centerHorizontal="true"
+        android:text="FIXED EXPENSE/VARIABLE EXPENSE" />
+
+
+
+
+
+
+
+</RelativeLayout>

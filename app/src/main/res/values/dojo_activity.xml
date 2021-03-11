@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="budget_button">Ninja Budget</string>
+    <string name="ninja_goals">Ninja Goals</string>
+    <string name="monthly_planner">Ninja Calendar</string>
+
+</resources>

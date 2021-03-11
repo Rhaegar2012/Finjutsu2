@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Finjutsu</string>
+    <string-array name="account_types">
+        <item>Income</item>
+        <item>Expense</item>
+    </string-array>
+
+</resources>

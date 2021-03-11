@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/added_goal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/added_goal_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/car"/>
+
+    <TextView
+        android:id="@+id/added_goal_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/added_goal_icon"
+        android:layout_centerInParent="true"
+        android:text="Goal" />
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:progress="0"
+        android:layout_below="@+id/added_goal_text"
+        android:layout_toRightOf="@+id/added_goal_icon"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/goal_save_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/added_goal_text"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:text="GOAL AMOUNT" />
+
+</RelativeLayout>

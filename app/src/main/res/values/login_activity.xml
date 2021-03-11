@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="user_name_tag">User Name</string>
+    <string name="password_tag">Password</string>
+    <string name="email_tag">Email</string>
+    <string name="login_button">Login</string>
+    <string name="signup_button">SignUp</string>
+</resources>

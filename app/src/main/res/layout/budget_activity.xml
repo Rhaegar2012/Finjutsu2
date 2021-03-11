@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/budget_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BudgetActivity">
+    
+
+    <Button
+        android:id="@+id/add_account"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+        android:onClick="onAddAccount"
+        android:text="@string/button_text"/>
+
+    <TextView
+        android:id="@+id/income_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:text="@string/income_tag" />
+    <TextView
+        android:id="@+id/income_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/income_tag"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:text="0"/>
+    <TextView
+        android:id="@+id/expense_tag"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/income_tag"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="@string/expense_tag" />
+
+    <TextView
+        android:id="@+id/expense_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/expense_tag"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/income_field"
+        android:text="0" />
+    <TextView
+        android:id="@+id/balance_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/expense_tag"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="@string/balance_tag"
+        />
+    <TextView
+        android:id="@+id/balance_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/balance_tag"
+        android:layout_toRightOf="@+id/expense_field"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="10dp"
+        android:text="0"/>
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/add_account"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/save_button"
+        android:onClick="onSave"/>
+    <LinearLayout
+        android:id="@+id/nested_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/balance_field">
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

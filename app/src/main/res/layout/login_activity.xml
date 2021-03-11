@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="60dp"
+    android:paddingLeft="30dp"
+    android:paddingBottom="60dp"
+    tools:context=".LoginActivity">
+    <TextView
+        android:id="@+id/user_name_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/user_name_tag"
+        />
+
+    <EditText
+        android:id="@+id/user_name_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/user_name_tag" />
+
+    <TextView
+        android:id="@+id/password_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name_tag"
+        android:layout_marginTop="38dp"
+        android:text="@string/password_tag" />
+
+    <EditText
+        android:id="@+id/password_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_name_field"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/password_tag"
+
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/email_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_tag"
+        android:layout_marginTop="44dp"
+        android:text="@string/email_tag" />
+
+    <EditText
+        android:id="@+id/email_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_field"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/email_tag" />
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_field"
+        android:layout_marginTop="40dp"
+        android:onClick="onLogin"
+        android:text="@string/login_button"/>
+    <Button
+        android:id="@+id/SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_field"
+        android:layout_toRightOf="@+id/Login"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:onClick="onSignUp"
+        android:text="@string/signup_button"/>
+
+</RelativeLayout>
